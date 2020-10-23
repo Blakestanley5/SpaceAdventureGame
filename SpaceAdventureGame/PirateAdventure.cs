@@ -18,15 +18,15 @@ namespace Pirate
             while (health > 0)
             {
 
-            Console.WriteLine("ARRRR Welcome YEE to my Pirate Adventure!");
+            Console.WriteLine("Welcome to a the Space Adventure!");
             Console.WriteLine("");
-            Name = GetUserResponse("AAR what is your PIRATE name?");
+            Name = GetUserResponse("What is your first name?");
             Console.Clear();
-            LastName = GetUserResponse("And what is yee Pirate last name?");
+            LastName = GetUserResponse("What is your last name?");
             Console.Clear();
             string newpiratename = (Name + " " + LastName);
 
-            Console.WriteLine($"Welcome {newpiratename}, To my pirate adventure!");
+            Console.WriteLine($"Welcome {newpiratename}, to the Space Adventure!");
 
             string answer;
 
@@ -40,14 +40,14 @@ namespace Pirate
                 if (answer == "no")
                 {
 
-                    Console.WriteLine("That's an unnaceptable answer me matey!");
+                    Console.WriteLine("That is unnacceptable!");
                         LoseLife();
                 }
 
                 else if (answer == "yes")
 
                 {
-                    Console.WriteLine("PEERFECT LET'S BEGIN!!");
+                    Console.WriteLine("In a distant galaxy, far from your current location is where our story starts");
                         break;
                 }
             }
@@ -55,24 +55,24 @@ namespace Pirate
 
 
 
-            Console.WriteLine("I kneeeew yeee had it in ya!");
+            Console.WriteLine("The distance between start systems is huge");
 
             string answertwo;
 
                 while(health > 0)
                 {
-                answertwo = GetUserResponse("Would you like to search for buried treasure? Yes or No?");
+                answertwo = GetUserResponse("Do you want to go to another star system? Yes or No?");
                 Console.Clear();
 
                 if (answertwo == "no")
                 {
 
-                    Console.WriteLine("Ya want to stay at home and fiddle yer thumbs?!");
+                    Console.WriteLine("Are you afraid of a little adventure?");
                         LoseLife();
                 }
                 else if (answertwo == "yes")
                 {
-                        Console.WriteLine("Buried treasure it is!");
+                        Console.WriteLine("You are on your way to a new star system!");
                             break;
                 }
 

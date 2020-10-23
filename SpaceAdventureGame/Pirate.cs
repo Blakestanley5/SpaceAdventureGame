@@ -10,7 +10,7 @@ namespace Pirate
         public string WillItWork { get; set; }
         public void Hi()
         {
-            Name = GetUserResponse("AAR what is your PIRATE name?");
+            Name = GetUserResponse("What is your name?");
 
         }
 
